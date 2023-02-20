@@ -121,6 +121,15 @@
 
 
 /*-----------grid-----------*/
+
+
+
+@media screen and (max-width:460px){
+    .container {
+        width: 100%;
+    }
+}
+
 .container{
     max-width: 100rem;
     width: 100%;
@@ -133,14 +142,15 @@
 
 
 
-
 .header{
     background: #2b2b2b;
+    padding: 2rem 0;
+    position: relative;
 }
 
 .header .header__wrapper{
     display: flex;
-    align-content: space-between;
+    align-items: center;
     justify-content: space-between;
 }
 .header .branding img{
@@ -151,7 +161,7 @@
     color: #ffffff;
     font-size: 1.8rem;
     margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .header .branding h2 span{
@@ -182,4 +192,49 @@
 
 .header .header__nav ul li:hover a{
     color: #FFa700;
+}
+
+
+.toggle__menu{
+    display: none;
+}
+
+.toggle__menu span{
+    width: 3rem;
+    height: .3rem;
+    background-color: #FFa700;
+    display: block;
+    margin-bottom: .5rem;
+    border-radius: 5rem;
+}
+
+@media screen and (max-width:500px){
+    .toggle__menu{
+        display: block;
+    }
+
+
+.header .header__nav{
+    position: absolute;
+    background: #ffffff;
+    top: 9.5rem; 
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+}
+.header .header__nav ul{
+    display: block;
+    text-align: center;
+   
+}
+
+.header .header__nav ul li{
+    margin-left: 0;
+}
+.header .header__nav ul li a{
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 3rem;
+}
 }
