@@ -662,7 +662,7 @@
 .abt-banner .abt-banner__text ul{
     color: #FFa700;
     font-size: 3rem;
-    margin-top: 5rem;
+    margin: 3rem 0;
 
 }
 
@@ -693,6 +693,9 @@
         margin-right: 0;
         text-align: center;
         margin-bottom: 2rem;
+    }
+    .abt-banner .abt-banner__text p.lorem{
+      text-align: justify;
     }
 
     .abt-banner .abt-banner__text:first-child{
@@ -729,7 +732,7 @@ margin-bottom: 5rem;
 }
 .recents .recents__title h2{
     color: #FFa700;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
 
 }
@@ -762,7 +765,6 @@ margin-bottom: 5rem;
 
 .recents .recents__card__text p{
     color: #2b2b2b;
-    font-weight: 600;
     margin: 3rem 0;
 }
 
