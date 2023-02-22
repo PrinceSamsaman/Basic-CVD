@@ -289,7 +289,7 @@
     font-size: 8rem;
     font-weight: 800;
     max-width: 40rem;
-    line-height: 1.2;
+    line-height: 1.2;   
 }
 
 .banner .banner__text p{
@@ -453,9 +453,339 @@
       margin: 10rem 4rem;
     }
     
-      
+     
     
 }
+
+/* ----------------Trends------------------------ */
+
+.latest{
+    background: #2b2b2b;
+    grid: 5rem 3rem;
+    padding: 7rem 0;
+}
+
+.latest .latest__title {
+    margin-bottom: 5rem;
+
+}
+.latest .latest__title h2{
+    color: #FFa700;
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+.latest .latest__title p{
+    color: #FFFFFF;
+}
+
+.latest .latest__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+}
+.latest .latest__card{
+     background: #FFFFFF;
+     border-radius: 3rem;
+}
+.latest .latest__card img{
+    width: 100%;
+}
+
+.latest .latest__card__text{
+    padding: 2rem 1rem;
+}
+
+.latest .latest__card__text h2{
+    color: #FFa700;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.latest .latest__card__text p{
+    color: #2b2b2b;
+    font-weight: 600;
+    margin: 3rem 0;
+}
+
+.latest .latest__card__text a{
+    color: #FFa700;
+}
+
+@media screen and (max-width: 500px){
+    .latest .latest__wrapper{
+        display: block;
+        padding: 0 4rem;
+      
+    }
+
+    .latest .latest__wrapper .latest__card{
+        margin: 6rem 0;
+    }
+    .latest .latest__title{
+        text-align: center;
+    }
+
+}
+
+
+/* ---------------Contacts------------------------ */
+
+
+.contacts{
+    background: #FFa700;
+    padding: 7rem 0;
+}
+
+.contacts .contacts__wrapper{
+    text-align: center;
+    
+}
+
+.contacts .contacts__wrapper h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.contacts .contacts__wrapper p{
+    margin-bottom: 2rem;
+    
+}
+
+@media screen and (max-width: 500px){
+    .contacts__wrapper{
+        display: block;
+        
+    }
+}
+
+/* --------------footer-------------------- */
+
+.footer{
+    background: #2b2b2b;
+    padding: 1.5rem 0;
+}
+.footer .footer__wrapper{
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer .footer__wrapper ul{
+    display: flex;
+    padding: 0 4rem;
+}
+
+.footer .footer__wrapper  .footer__icon{
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer .footer__wrapper  .footer__icon ul li a{
+    color: #ffffff;
+    font-size: 2rem;
+    
+}
+
+.footer .footer__wrapper  .footer__icon ul li{
+   margin: 2rem;
+    
+}
+
+@media screen and (max-width: 500px){
+    .footer .footer__wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .footer__wrapper .footer__icon{
+        display: block;
+        align-items: center;
+    }
+
+    .footer .footer__wrapper  .footer__icon p{
+        margin-bottom: 2rem;
+    }
+    
+}
+
+
+/* -----------------About page----------------- */
+
+.abt-banner{
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 15rem;
+ }
+
+ .abt-banner .container .fa-angle-down{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+ }
+
+ 
+ .abt-banner .container i{
+    font-size: 3rem;
+    color: #FFa700;
+ }
+
+ .abt-banner .abt-banner__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    
+
+ }
+ 
+.abt-banner .abt-banner__text h1{
+    color: #FFa700;
+    font-size: 8rem;
+    font-weight: 800;
+    max-width: 50rem;
+    margin-bottom: 1rem;
+   
+}
+
+.abt-banner .abt-banner__text p{
+    max-width: 40rem;
+    text-align: justify;
+    margin: 4rem 0;
+    margin-bottom: -2rem;
+}
+
+.abt-banner .abt-banner__text ul{
+    color: #FFa700;
+    font-size: 3rem;
+    margin-top: 5rem;
+
+}
+
+.abt-banner .abt-banner__text ul i{
+    color: #FFa700;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    
+
+}
+
+.abt-banner .abt-banner__text ul I:hover{
+   color: #2b2b2b;
+
+}
+
+@media screen and (max-width:500px){
+    .abt-banner .abt-banner__wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .abt-banner .container .angle-down{
+        text-align: center;
+     }
+    
+
+    .abt-banner .abt-banner__text p{
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .abt-banner .abt-banner__text:first-child{
+        margin-right: 0;
+        text-align: center;
+    }
+    .abt-banner img{
+        margin-left: 0;
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+    
+
+    .abt-banner .abt-banner__text h1{
+        max-width: fit-content;
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+
+}
+
+/* ----------------recent projects------------------------ */
+
+.recents{
+    background: #2b2b2b;
+    grid: 5rem 3rem;
+    padding: 7rem 0;
+}
+
+.recents .recents__title {
+margin-bottom: 5rem;
+
+}
+.recents .recents__title h2{
+    color: #FFa700;
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+.recents .recents__title p{
+    color: #FFFFFF;
+}
+
+.recents .recents__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6rem;
+}
+.recents .recents__card{
+     background: #FFFFFF;
+     border-radius: 3rem;
+}
+.recents .recents__card img{
+    width: 100%;
+}
+
+.recents .recents__card__text{
+    padding: 2rem 1rem;
+}
+
+.recents .recents__card__text h2{
+    color: #FFa700;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.recents .recents__card__text p{
+    color: #2b2b2b;
+    font-weight: 600;
+    margin: 3rem 0;
+}
+
+.recents .recents__card__text a{
+    color: #FFa700;
+}
+
+@media screen and (max-width: 500px){
+    .recents .recents__wrapper{
+        display: block;
+        padding: 0 4rem;
+      
+    }
+
+    .recents .recents__wrapper .recents__card{
+        margin: 6rem 0;
+    }
+    .recents .recents__title{
+        text-align: center;
+    }
+
+}
+
 
  /* ------------REPEATABLE PATTERNS--------------- */
 
@@ -482,4 +812,12 @@
     background: #2b2b2b;
     color: #FFFFFF;
  }
+
+ .bg--dark:hover{
+    background: #FFa700;
+    color: #2b2b2b;
+    border: 1px solid #2b2b2b;
+ }
+ 
+
  
