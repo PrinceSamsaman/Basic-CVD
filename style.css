@@ -914,7 +914,7 @@ margin-bottom: 5rem;
 .updates .updates__title h1{
     color: #FFa700;
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 2rem;
 
 }
@@ -933,7 +933,8 @@ margin-bottom: 5rem;
 
 
 .updates .updates__author ul li{
-    margin-right: 4rem;
+    margin-right: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .updates .updates__author ul li i{
@@ -951,7 +952,7 @@ margin-bottom: 5rem;
 }
 
 .updates .updates__text a{
-    color: #FFa700;
+    color: #FFa700;   
 }
 
 
@@ -961,7 +962,7 @@ margin-bottom: 5rem;
 
 
 .updates .updates__item{
-    padding: 5rem 0;
+    padding: 7rem 0;
 }
 
 .updates .updates__item:not(:last-child){
@@ -978,6 +979,11 @@ margin-bottom: 5rem;
     padding: 5rem 0;
 }
 
+.updates .updates__categ table tr td:last-child{
+    float: right;
+}
+
+
 .updates .updates__categ h3{
     color: #FFa700;
     font-size: 3rem;
@@ -993,6 +999,92 @@ margin-bottom: 5rem;
     height: 5rem;
 }
 
+/* --------RP-------- */
+
+.updates .rp{
+    padding: 7rem 0;
+}
+
+.updates .rp h3{
+    color: #FFa700;
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-bottom: 2.5rem;
+
+}
+.updates .rp__item{
+    display: flex;
+    margin: 3rem 0;
+
+}
+
+.updates .rp__item  img{
+    height: 100%;
+
+}
+.updates .rp__item h4{
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.updates .rp__item .rp__item__text{
+   padding-left: 2.5rem;
+}
+
+/* ---------tags----------- */
+
+.updates .update__tags{
+    padding: 7rem 0;
+}
+
+.updates .update__tags h3{
+    color: #FFa700;
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-bottom: 2.5rem;
+}
+
+.updates .update__tags .updates__tags__btn a{
+    padding: 2rem 3rem;
+    margin: 1rem; 
+    font-weight: 600; 
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    .updates{
+        padding: 0 3rem;
+    }
+    
+    .updates .updates__wrapper{
+        display: block;
+    }
+
+    .updates .updates__title{
+        text-align: center;
+    }
+
+
+    .updates .updates__text h3,
+    .updates .updates__categ h3,
+    .updates .rp h3,
+    .updates .update__tags h3{
+        text-align: center;
+    }
+
+    .updates .update__tags .updates__tags__btn{
+        text-align: center;
+    }
+
+
+    
+    
+
+
+
+}
 
 
  /* ------------REPEATABLE PATTERNS--------------- */
@@ -1010,6 +1102,13 @@ margin-bottom: 5rem;
     color: #FFFFFF;
     transition: .5s ease;
  }
+ .bg--white{
+    background: #ffffff;
+    color: #2b2b2b;
+    transition: .5s ease;
+    border: 1px solid black;
+ }
+
 
 .bg--yellow:hover{
     background: #2b2b2b;
@@ -1021,6 +1120,24 @@ margin-bottom: 5rem;
     color: #FFFFFF;
  }
 
+ .bg--light{
+    background: #FFFFFF;
+    color: black;
+    border: 1px solid black;
+ }
+
+ .bg--light:hover{
+    background: #2b2b2b;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+ }
+
+ .bg--dark-2{
+    background: #FFFFFF;
+    color: #2b2b2b;
+ }
+
+
  .bg--dark:hover{
     background: #FFa700;
     color: #2b2b2b;
@@ -1029,6 +1146,10 @@ margin-bottom: 5rem;
  
  .bb-1{
     border-bottom: 1px solid #2b2b2b;
+ }
+
+ .bt-1{
+    border-top: 1px solid #2b2b2b;
  }
 
  
